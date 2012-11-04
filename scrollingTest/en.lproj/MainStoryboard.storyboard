@@ -36,7 +36,6 @@
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" id="t5B-b7-wEz">
                                 <rect key="frame" x="320" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-20" maxX="320" maxY="20"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="f6r-Sv-ZJw"/>
                                 </connections>
