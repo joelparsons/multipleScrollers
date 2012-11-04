@@ -32,6 +32,12 @@
     
     boundsSize.height *= 2.0f;
     self.scrollviewOnTop.contentSize = boundsSize;
+    
+    //no matter where we place the scrollview in the xib we ajust the indicator offsets
+    //so that the scroll indicator is always visible
+    CGPoint scrollviewOrigin = self.scrollviewOnTop.frame.origin;
+    self.scrollviewOnTop.scrollIndicatorInsets = UIEdgeInsetsMake(-scrollviewOrigin.y, 0, scrollviewOrigin.y, scrollviewOrigin.x);
+    
 }
 
 - (void)didReceiveMemoryWarning
